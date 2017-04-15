@@ -1,13 +1,15 @@
+const path = require('path');
+
 module.exports = {
   /* For now: default to cdn. */
-  load(srcPath = 'https://as.alipayobjects.com/g/cicada/monaco-editor-mirror/0.6.1/min', callback) {
+  load(srcPath = null, callback) {
     if (window.monaco) {
       callback();
       return;
     }
     const config = {
       paths: {
-        vs: srcPath + '/vs'
+        vs: srcPath || path.join(__dirname, '../lib/vs')
       }
     };
     const loaderUrl = `${config.paths.vs}/loader.js`;

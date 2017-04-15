@@ -3,11 +3,15 @@ var webpack = require('webpack')
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './index.js',
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'build.js'
+    path: path.resolve(__dirname, './lib'),
+    publicPath: '/lib/',
+    filename: 'build.js',
+    libraryTarget: 'umd'
+  },
+  node: {
+    __dirname: true
   },
   module: {
     rules: [

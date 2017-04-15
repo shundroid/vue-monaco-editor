@@ -4,7 +4,6 @@
     <Monaco
         height="600"
         language="typescript"
-        srcPath="dist"
         :code="code"
         :options="options"
         :highlighted="highlightLines"
@@ -34,7 +33,7 @@
 </template>
 
 <script>
-const Monaco = require('./Monaco.vue')
+const Monaco = require('vue-monaco-editor')
 
 module.exports = {
   components: {
