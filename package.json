@@ -1,7 +1,7 @@
 {
   "name": "vue-monaco-editor",
   "description": "Monaco Editor Component for Vue.js 2.x",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "author": "matt-oconnell <mattoconnell408@gmail.com>",
   "main": "lib/build.js",
   "private": false,
@@ -29,9 +29,7 @@
   "dependencies": {
     "lodash.debounce": "^4.0.8",
     "monaco-editor": "^0.8.3",
-    "vue": "^2.1.0"
-  },
-  "devDependencies": {
+    "vue": "^2.1.0",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-preset-es2015": "^6.0.0",
@@ -44,5 +42,7 @@
     "vueify": "^9.4.0",
     "webpack": "^2.1.0-beta.25",
     "webpack-dev-server": "^2.1.0-beta.9"
+  },
+  "devDependencies": {
   }
 }
