@@ -1,7 +1,7 @@
 {
   "name": "vue-monaco-editor",
   "description": "Monaco Editor Component for Vue.js 2.x",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "matt-oconnell <mattoconnell408@gmail.com>",
   "main": "lib/build.js",
   "private": false,
@@ -9,7 +9,7 @@
     "build:dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot --config webpack.dev.config.js",
     "build:lib": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.build.config.js",
     "dev": "npm run build:dev && npm run build:lib",
-    "preinstall": "npm run build:lib"
+    "install": "npm run build:lib"
   },
   "repository": {
     "type": "git",
